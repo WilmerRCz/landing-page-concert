@@ -4,38 +4,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>Landing Page</title>
 </head>
 
-<body class="">
+<body class="bg-slate-900">
   <div class="relative h-screen">
     <img class="absolute inset-0 w-full h-full object-cover " src="/assets/concert.jpg" alt="concert">
 
-    <h1 class="absolute inset-0 m-4 text-center text-white font-bold sm:text-3xl text-lg">Concert: 30/03/2023 - <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-amber-500">Martin Garrix</span> 
-    , L.A
+    <h1 class="absolute inset-0 m-4 text-center text-white font-bold sm:text-3xl text-lg">Concert: 30/03/2023 - <span
+        class="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-amber-500">Martin Garrix</span>
+      , L.A
     </h1>
     <div class="absolute inset-0 flex flex-col justify-center items-start sm:m-4">
       <div class="backdrop-blur-xl rounded-3xl p-2 sm:p-4">
         <h2 class="text-white font-semibold uppercase">Introduce tu correo si quieres saber mas información del
           concierto
         </h2>
-        <form action="">
-          <input class="rounded-lg border-2 border-green-500 w-full sm:w-4/5 mt-2 mb-2 sm:m-0" type="email" placeholder=" CORREO">
-          <button
+        <form onsubmit="correoEnviado()">
+          <input id="correo" name="correo" class="rounded-lg border-2 border-green-500 w-full sm:w-4/5 mt-2 mb-2 sm:m-0" type="email"
+            placeholder=" CORREO">
+          <button type="submit"
             class="text-white font-bold uppercase rounded-lg px-2 py-1 bg-gradient-to-r from-green-500 to-amber-500 hover:from-amber-500 hover:to-green-500">Enviar</button>
         </form>
       </div>
-
-
     </div>
-
-
-
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 m-4 p-8">
+    
+    <div class="col-span-1 bg-slate-800 h-full rounded shadow-lg p-4 hover:shadow-slate-600">
+      <div class="justify-center text-center ">
+        <i class="fa-sharp fa-solid fa-drum fa-5x text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-amber-500"></i>
+      </div>
+      <div class="text-center m-4">
+        <p class="text-white">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit consequuntur quas reiciendis veritatis odit vero doloremque, alias minima nemo aut. Labore totam iure, magnam quas ipsum minus dolores mollitia autem!
+        </p>
+      </div>
+    </div>
+    <div class="col-span-1 bg-slate-800 h-full rounded shadow-lg p-4 hover:shadow-slate-600">
+      <div class="justify-center text-center ">
+        <i class="fa-solid fa-lightbulb fa-5x text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-amber-500"></i>
+      </div>
+      <div class="text-center m-4">
+        <p class="text-white">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit consequuntur quas reiciendis veritatis odit vero doloremque, alias minima nemo aut. Labore totam iure, magnam quas ipsum minus dolores mollitia autem!
+        </p>
+      </div>
+    </div>
+    <div class="col-span-1 bg-slate-800 h-full rounded shadow-lg p-4 hover:shadow-slate-600">
+      <div class="justify-center text-center ">
+        <i class="fa-solid fa-people-group fa-5x text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-amber-500"></i>
+      </div>
+      <div class="text-center m-4">
+        <p class="text-white">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit consequuntur quas reiciendis veritatis odit vero doloremque, alias minima nemo aut. Labore totam iure, magnam quas ipsum minus dolores mollitia autem!
+        </p>
+      </div>
+    </div>
   </div>
 
 
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/main.js"></script>
 </body>
 
 </html>
