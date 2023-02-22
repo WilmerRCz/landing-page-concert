@@ -1,8 +1,12 @@
-function correoEnviado(){
+function correoEnviado(event){
   event.preventDefault()
   const correo = document.getElementById('correo').value
-  if(correo == ''){
-    return alert('Introduce tu correo')
+  if(correo === ''){
+     alert('Introduce tu correo')
+     return
   }
-  return alert('Muy pronto nos contactaremos al siguiente correo: ' + correo)
+   alert('Muy pronto nos contactaremos al siguiente correo: ' + correo)
 }
+
+const form = document.getElementById("myForm")
+form.addEventListener("submit", correoEnviado)
